@@ -1,9 +1,31 @@
 aid: general-instinct
 name: General Instinct
-description: General Instinct is a company surfaced as a portfolio company of y-combinator and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  General Instinct is a San Francisco company (Y Combinator Spring 2026) building the deployment layer
+  for physical AI. Founded in 2026 by Bill Jiao and Guanming Wang, it distills, quantizes, and deploys
+  large frontier AI models onto constrained edge hardware so robotics, drone, and physical-AI teams can
+  run low-latency models fully offline on devices like NVIDIA Jetson, mobile NPUs, ARM CPUs, the Apple
+  Neural Engine, and Snapdragon. Its first product, Instinct Edge, takes a model, a target device, and a
+  latency budget and returns an offline runtime that hits the budget on-device with no cloud calls,
+  handling model compression, custom kernel optimization (CUDA, Metal, ARM NEON), and the data-to-serving
+  pipeline. It was surfaced as a Y Combinator portfolio company and added to the API Evangelist network
+  as a stub; enrichment searched the public web and found a marketing landing page but no developer
+  portal, documentation, OpenAPI, SDKs, or public API surface, so no API artifacts could be harvested.
+  This profile captures the company identity plus the security posture of its public web surface, and
+  remains an identity-only lead pending a discoverable API.
 url: https://raw.githubusercontent.com/api-evangelist/general-instinct/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://general-instinct.com/GI-logo-dark-new.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +34,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-enrichment:
+  last_run: '2026-07-19'
+  status: identity-only
+  api_surface_found: false
+  notes: >-
+    Confirmed YC Spring 2026 edge-AI deployment startup (Instinct Edge); frontier models on edge
+    devices, fully offline. Landing page only; no developer portal, docs, OpenAPI, SDKs, MCP, or
+    well-known documents (all /.well-known/* + /llms.txt return the SPA HTML shell, not real
+    documents). Domain-security probed on general-instinct.com.
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Edge AI
+- Edge Computing
+- Physical AI
+- Robotics
+- Model Deployment
+- Inference
+- On-Device AI
+- Y Combinator
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://general-instinct.com/
+- type: X
+  url: https://x.com/gen_instinct
+- type: DomainSecurity
+  url: security/general-instinct-domain-security.yml
