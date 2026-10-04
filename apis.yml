@@ -58,7 +58,7 @@ x-enrichment:
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Edge AI
 - Edge Computing
 - Physical AI
@@ -79,6 +79,7 @@ tags_raw:
 - Inference
 - On-Device AI
 - Y Combinator
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
